@@ -6,7 +6,7 @@ import { render } from "../utils/render";
 export const navigateTool = {
   name: "navigate",
   config: {
-    description: "Navigate in WorkOS to a route by valid route_id. Valid Route IDs are listed in the markdown returned by the tool. Always start by navigating to route_id 'home'.",
+    description: "Navigate to a route by valid route_id. Valid Route IDs are listed in the markdown returned by the tool. Always start by navigating to route_id 'home'.",
     inputSchema: {
       route_id: z.string(),
     } as const,

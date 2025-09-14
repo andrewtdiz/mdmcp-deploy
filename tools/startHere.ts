@@ -9,7 +9,7 @@ export const startHereTool = {
     intention: z.string().describe("The intention of the user."),
   } as const,
   config: {
-    description: "The main entry point to using the WorkOS tool, always call this first.",
+    description: "The main entry point to using this MCP server, always call this first.",
   },
   callback: async (args: z.ZodRawShape, rest: any) => {
     const { sessionId, requestInfo } = rest;
